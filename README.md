@@ -35,7 +35,7 @@ This is an easier build than the 7" tablet above, although the tablet is not as 
 
 # RPi Tablet OS
 
-You can install any OS you like, with Raspberry Pi OS and Ubuntu MATE providing decent support for the touch screen out-of-the-box. However, you will start running into usability issues, for example, how do I minimize/maximize, switch between apps, get out of full screen, etc. with no keyboard or mouse attached? The scripts below will are meant to solve many of these problems, specifically for Raspberry Pi OS.
+You can install any OS you like, with Raspberry Pi OS and Ubuntu MATE providing decent support for the touch screen out-of-the-box. However, you will start running into usability issues, for example, how do I type text, minimize/maximize, switch between apps, get out of full screen, etc. with no keyboard or mouse attached? The scripts below are meant to solve many of these problems, specifically for Raspberry Pi OS.
 
 Please only run this on a fresh installation of the latest Raspberry Pi OS, as the script makes many assumptions that may delete data from an already-customized installation.
 
