@@ -62,6 +62,5 @@ max_framebuffers=2
 hdmi_enable_4kp60=1
 
 [all]
-dtoverlay=vc4-kms-v3d
 start_x=1
 gpu_mem=128

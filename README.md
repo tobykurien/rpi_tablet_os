@@ -10,7 +10,7 @@ To build the 7" Raspberry Pi tablet, you will need:
 
 - Raspberry Pi: minimum 3b, recommend 4b with 4Gb of RAM. I do not recommend sticking a heatsink on, as over time it will slide off the chip. Active cooling will not be necessary if you don't overclock the Pi, and since the Pi will be in a vertical position during use, it will run cool.
 - Official Raspberry Pi touchscreen: if you have the original v1.0 like I do, then the screen brightness cannot be controlled by software, and you may want to consider modifying the LCD controller board with a potentiometer and MOSFET current limiter like I did (details to come).
-- 3D-printed case from [Thingiverse](https://www.thingiverse.com/thing:1068762): this is the one I used, however I did not print the rear cover, instead I opted for a clear polycarbonate sheet that I cut to size and screwed into place. I also cut a slot into the rear panel to allow me to remove and insert the microSD card.
+- 3D-printed case from [Thingiverse](https://www.thingiverse.com/thing:1068762): this is the one I used, however I did not print the rear cover, instead I opted for a clear polycarbonate sheet that I cut to size and screwed into place. The clear polycarbonate allows me to see the activity and power LEDS of the Pi, and also looks great when showing off the tablet to others, as you can see the innards. I also cut a slot into the rear panel to allow me to remove and insert the microSD card.
 - (Optional) [microSD slot extender](https://www.amazon.com/sd-card-extension/s?k=sd+card+extension): will allow you to mount a microSD slot into the side of the case for easy card access.
 - Bolts/screws/grubs, drill, and screwdriver to put everything together
 
