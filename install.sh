@@ -8,6 +8,9 @@ git clone https://github.com/tobykurien/rpi_tablet_os.git rpi_tablet_os
 cd rpi_tablet_os/fs
 sudo cp -r * /
 
+sudo mkdir /usr/share/touchegg
+sudo ln -s ~/.config/touchegg/touchegg.conf /usr/share/touchegg/touchegg.conf
+
 echo "Installation complete, rebooting..."
 sleep 10s
 sudo reboot

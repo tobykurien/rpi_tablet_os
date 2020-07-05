@@ -45,6 +45,17 @@ After installing Raspberry Pi OS, run the following command in a terminal:
 
 `curl "https://raw.githubusercontent.com/tobykurien/rpi_tablet_os/master/install.sh" | /bin/sh`
 
+Once installed, you can use the following touch gestures:
+
+- Two-finger tap to right-click. Whichever finger touched first becomes the point that it right-clicked. You can also long-press for a right-click, but there are instances where that might not be possible.
+- Two-finger drag up or down for scrolling. You can also drag up or down with one finger for scrolling, but there are instances where that might not be possible.
+- Three-finger swipe up to maximize a window
+- Three-finger swipe down to minimize a window
+- Three-finger tap to full-screen or un-full-screen a window
+- Four-finger swipe left or right to switch between browser tabs
+
+The above gestures can be changed in `~/.config/touchegg/touchegg.conf`
+
 ## What the script does
 
 - Installs the OnBoard on-screen keyboard
