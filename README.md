@@ -43,7 +43,7 @@ Please only run this on a fresh installation of the latest Raspberry Pi OS, as t
 
 After installing Raspberry Pi OS, run the following command in a terminal:
 
-`curl "https://raw.githubusercontent.com/tobykurien/rpi_tablet_os/master/install.sh" |sh`
+`curl "https://raw.githubusercontent.com/tobykurien/rpi_tablet_os/master/install.sh" | /bin/sh`
 
 ## What the script does
 
