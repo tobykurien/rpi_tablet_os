@@ -4,6 +4,7 @@ sudo apt update
 sudo apt full-upgrade
 sudo apt install -y onboard git libgles2-mesa libgles2-mesa-dev xorg-dev bluetooth bluez blueman pulseaudio libqt4-dev libx11-6 libxtst-dev libgrail6
 
+rm -rf rpi_tablet_os
 git clone https://github.com/tobykurien/rpi_tablet_os.git rpi_tablet_os
 cd rpi_tablet_os/fs
 sudo cp -r * /
