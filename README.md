@@ -1,4 +1,4 @@
-# rpi_tablet_os
+# RPi Tablet OS
 
 Customization of Raspberry Pi OS for DIY Raspberry Pi based tablets. This is a work-in-progress.
 
@@ -56,10 +56,11 @@ Once installed, you can use the following touch gestures:
 
 The above gestures can be changed in `~/.config/touchegg/touchegg.conf`
 
+If you would like to install the latest Firefox (rather than the old ESR version), you can execute the `firefox_install.sh` script from the home directory. You will need to run this script regularly to keep Firefox updated.
+
 ## What the script does
 
 - Installs the OnBoard on-screen keyboard
 - Installs and configures touchegg (not available by default)
-- Installs the latest Firefox (only the old ESR is available by default) and applies some touch fixes
 - Makes bluetooth audio streaming work
 - Enables hardware acceleration as described in [this article](https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html)
