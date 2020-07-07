@@ -11,7 +11,6 @@ fi
 
 curl "$URL$LATEST_BUILD" > $LATEST_BUILD
 
-sudo apt install pulseaudio || exit 1
 sudo dpkg -i $LATEST_BUILD || exit 1
 
 echo "Firefox installed. Open about:config and set layers.acceleration.force-enabled to true to enable hardware acceleration."
