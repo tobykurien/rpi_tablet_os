@@ -35,15 +35,17 @@ This is an easier build than the 7" tablet above, although the tablet is not as 
 
 # RPi Tablet OS
 
-You can install any OS you like, with Raspberry Pi OS and Ubuntu MATE providing decent support for the touch screen out-of-the-box. However, you will start running into usability issues, for example, how do I type text, minimize/maximize, switch between apps, get out of full screen, etc. with no keyboard or mouse attached? The scripts below are meant to solve many of these problems, specifically for Raspberry Pi OS.
+You can install any OS you like on your Raspberry Pi tablet, with Raspberry Pi OS and Ubuntu MATE providing decent support for the touch screen out-of-the-box. However, you will start running into usability issues, for example, how do I type text, minimize/maximize, switch between apps, get out of full screen, etc. with no keyboard or mouse attached? The scripts below are meant to solve many of these problems, specifically for Raspberry Pi OS.
 
-Please only run this on a fresh installation of the latest Raspberry Pi OS, as the script makes many assumptions that may delete data from an already-customized installation.
-
-## Usage
+## Installation
 
 After installing Raspberry Pi OS, run the following command in a terminal:
 
 `curl "https://raw.githubusercontent.com/tobykurien/rpi_tablet_os/master/install.sh" | /bin/sh`
+
+Please only run this on a fresh installation of the latest Raspberry Pi OS (or make a backup of your existing installation first), as the script makes many assumptions that may delete data from an already-customized installation. It is safe to run this script multiple times.
+
+## Usage
 
 Once installed, you can use the following touch gestures:
 
@@ -52,7 +54,8 @@ Once installed, you can use the following touch gestures:
 - Three-finger swipe up to maximize a window
 - Three-finger swipe down to minimize a window
 - Three-finger tap to full-screen or un-full-screen a window
-- Four-finger swipe left or right to switch between browser tabs
+- Three-finger swipe left or right to switch between browser tabs (Ctrl-Tab)
+- Four-finger swipe left or right to switch between apps (Alt-Tab)
 
 The above gestures can be changed in `~/.config/touchegg/touchegg.conf`
 
@@ -60,7 +63,7 @@ If you would like to install the latest Firefox (rather than the old ESR version
 
 ## What the script does
 
-- Installs the OnBoard on-screen keyboard
-- Installs and configures touchegg (not available by default)
+- Installs and configures OnBoard on-screen keyboard
+- Installs and configures touchegg for touch gestures
 - Makes bluetooth audio streaming work
-- Enables hardware acceleration as described in [this article](https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html)
+- Enables hardware acceleration for Chromium as described in [this article](https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html)
