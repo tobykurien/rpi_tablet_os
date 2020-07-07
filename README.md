@@ -15,13 +15,13 @@ To build the 7" Raspberry Pi tablet, you will need:
 - **microSD card**: for your OS and storage. I used a plain Sandisk 16Gb class 10 card.
 - **Official Raspberry Pi touchscreen**: if you have the original v1.0 like I do, then the screen brightness cannot be controlled by software, and you may want to consider modifying the LCD controller board with a potentiometer and MOSFET current limiter like I did (details to come).
 - **3D-printed case** from [Thingiverse](https://www.thingiverse.com/thing:1068762): this is the one I used, however I did not print the rear cover, instead I opted for a clear polycarbonate sheet that I cut to size and screwed into place. The clear polycarbonate allows me to see the activity and power LEDS of the Pi, and also looks great when showing off the tablet to others, as you can see the innards. I also cut a slot into the rear panel to allow me to remove and insert the microSD card.
-- **Powerbank**: A high quality powerbank capable of at least 2.1A or more. A 10,000mAh powerbank provides adequate battery life (over 10 hours).
+- **Powerbank**: A high quality powerbank capable of at least 2.1A or more. A 10,000mAh powerbank provides adequate battery life (over 10 hours). You want a powerbank with a built-in display that shows how much charge is left, since the tablet won't be showing you that.
 - (Optional) [microSD slot extender](https://www.amazon.com/sd-card-extension/s?k=sd+card+extension): will allow you to mount a microSD slot into the side of the case for easy card access.
 - Bolts/screws/grubs, drill, and screwdriver to put everything together
 
 The Pi is mounted onto the back of the LCD in an inverted and offset way. It will require that you gently bend the Ground and 5V pins on the Pi GPIO outwards a little so that the jumpers from the LCD driver board can connect while still allowing the Pi to lie flat against the back of the LCD. The assembled unit is shown in this video:
 
-[7" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab/rpi-tab.mp4)
+[VIDEO: 7" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab/rpi-tab.mp4)
 
 # 11.6" full-HD Pi tablet
 
@@ -36,12 +36,12 @@ To build the 11.6" Raspberry Pi tablet, you will need:
 - **Boost converter**: to convert the 5V from the powerbank to 12V for the LCD. I used [this one](https://www.robotics.org.za/MT3608). The screen can draw up to 20W on maximum brightness with loud audio playback, so your boost converter should be able to handle 2A or more.
 - **Power barrel connector**: the thin barrel connector for the LCD. I used the original one that came with the LCD by cutting it off the included power supply.
 - Sacrificial **USB cable**: a USB cable of equal length to the one you will use for the Pi, but the connector will be cut off so that you can solder the cable into the boost coverter (red wire to positive, black wire to negative), which will then be connected to the power connector for the LCD. I used a cable that has a [ferrite bead](https://en.wikipedia.org/wiki/Ferrite_bead) on one end of the cable, which I think is important, because the various switching power supplies in the tablet and the powerbank can interfere and resonate, causing damage (I lost a powerbank this way). I twisted the two USB cables (one for the Pi and another for the LCD screen) together to make it feel like a single cable, which makes it easier to manage.
-- **Powerbank**: A high quality powerbank capable of at least 3A or more, with two USB outputs (or two separate powerbanks). This tablet can draw lots of power (over 20W if maxed out on brightness, audio, and computation). I generally run close to minimum brightness and low audio volumes, otherwise my powerbank cannot supply the power required and the tablet shuts down.
+- **Powerbank**: A high quality powerbank with a battery level display, capable of at least 3A or more, with two USB outputs (or two separate powerbanks). This tablet can draw lots of power (over 20W if maxed out on brightness, audio, and computation). I prefer to use two separate powerbanks so that I get better battery life, avoid any potential resonance issues with the switching power supplies, and each powerbank can reliably power the tablet.
 - Bolts/screws/double-sided tape, soldering iron to solder the boost converter on, and I used a thin sheet of MDF wood that I cut, varnished, and screwed over the back of the tablet. Unfortunately this makes the screen's controls inaccessible.
 
-This is an easier build than the 7" tablet above, although the tablet is not as portable, and it is harder to power. The gorgeous screen makes it worth it though. You may need to experiment with a few powerbanks to make sue the Pi isn't power-limited, or use two powerbanks taped/bound together. The build is described in this video:
+This is an easier build than the 7" tablet above, although the tablet is not as portable, and it is harder to power. I did try various options, like powering from 12V through one cable, using a LiPo pack, etc., however the powerbank still offers better portability and practicality. The gorgeous screen makes it worth it though. The build is described in this video:
 
-[11.6" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab/rpi-tab-10.mp4)
+[VIDEO: 11.6" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab/rpi-tab-10.mp4)
 
 # RPi Tablet OS
 
