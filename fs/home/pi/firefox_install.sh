@@ -1,6 +1,6 @@
 #!/bin/sh
 URL=ftp://ports.ubuntu.com/ubuntu-ports/pool/main/f/firefox/
-#curl "$URL" > firefox_files.txt
+curl "$URL" > firefox_files.txt
 LATEST_BUILD=`cat firefox_files.txt|grep 18.04.1_armhf.deb|tail -n 1|awk '{print $9}'`
 
 if [ -e $LATEST_BUILD ]
