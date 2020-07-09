@@ -3,6 +3,7 @@ echo "Installing Raspberry Pi Tablet OS..."
 sudo apt update
 sudo apt full-upgrade
 sudo apt install -y onboard at-spi2-core git libgles2-mesa libgles2-mesa-dev xorg-dev bluetooth bluez blueman pulseaudio libqt4-dev libx11-6 libxtst-dev libgrail6 dconf-cli
+sudo apt remove bluealsa
 
 rm -rf rpi_tablet_os
 git clone https://github.com/tobykurien/rpi_tablet_os.git rpi_tablet_os
