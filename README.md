@@ -76,3 +76,7 @@ If you would like to install the latest Firefox (rather than the old ESR version
 - Installs and configures touchegg for touch gestures
 - Makes bluetooth audio streaming work
 - Enables hardware acceleration for Chromium as described in [this article](https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html)
+
+## Other tweaks
+
+- [Enable Netflix](https://www.tomshardware.com/how-to/play-netflix-raspberry-pi) and other DRM-enabled streaming services
