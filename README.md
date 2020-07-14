@@ -77,6 +77,8 @@ If you would like to install the latest Firefox (rather than the old ESR version
 - Makes bluetooth audio streaming work
 - Enables hardware acceleration for Chromium as described in [this article](https://www.dedoimedo.com/computers/rpi4-ubuntu-mate-hw-video-acceleration.html)
 
-## Other tweaks
+## Other tweaks and tips
 
 - [Enable Netflix](https://www.tomshardware.com/how-to/play-netflix-raspberry-pi) and other DRM-enabled streaming services
+- For fast power-off, run `sync` command in a terminal, and once it completes, you can disconnect power safely.
+- For screen-saving, you can install `xscreensaver` and configure it to turn off the screen rather than just showing a blank screen (to save power). However my experience has been that it sometimes activates during boot-up and touch stops working, leaving you stuck with no option but to reboot. I don't recommend it.
