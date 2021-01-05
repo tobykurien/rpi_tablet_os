@@ -43,6 +43,15 @@ This is an easier build than the 7" tablet above, although the tablet is not as 
 
 [VIDEO: 11.6" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab/rpi-tab-10.mp4)
 
+# 11.6" full-HD Pi Portable PC
+
+![11.6" Raspberry Pi Portable PC](images/rpi_portable_pc.jpeg)
+
+This is a more advanced version of the above tablet with the following features:
+
+- Metal backing plate to act as a stand, hold an integrated battery pack, and has a lip at the top allowing the tablet/PC to be easily carried around
+- Relatively stable on the lap and on a desk thanks to low center of gravity provided by battery pack placement, making it useable as both a tablet and a PC
+
 # RPi Tablet OS
 
 You can install any OS you like on your Raspberry Pi tablet, with Raspberry Pi OS and Ubuntu MATE providing decent support for the touch screen out-of-the-box. However, you will start running into usability issues, for example, how do I type text, minimize/maximize, switch between apps, get out of full screen, etc. with no keyboard or mouse attached? The scripts below are meant to solve many of these problems, specifically for Raspberry Pi OS.
@@ -60,10 +69,10 @@ Please only run this on a fresh installation of the latest Raspberry Pi OS (or m
 Once installed, you can use the following touch gestures:
 
 - **Two-finger tap** to right-click. Whichever finger touched first becomes the point that it right-clicked. You can also long-press for a right-click, but there are instances where that might not work.
-- **Two-finger drag** up or down for scrolling. You can also drag up or down with one finger for scrolling, but there are instances where that might not work.
 - **Three-finger swipe** up or down to maximize or minimize the current window
 - **Three-finger tap** to fullscreen or un-fullscreen the current window
 - **Three-finger swipe** left or right to switch between browser tabs (Ctrl-Tab)
+- **Three-finger pinch** Close the current app/window
 - **Four-finger swipe** left or right to switch between apps (Alt-Tab)
 
 The above gestures can be changed in `~/.config/touchegg/touchegg.conf`
