@@ -18,5 +18,6 @@ if [ "$_IP" ]; then
 fi
 
 export MOZ_USE_XINPUT2=1
+export GTK_OVERLAY_SCROLLING=1
 
 exit 0
