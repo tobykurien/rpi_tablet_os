@@ -10,9 +10,10 @@ git clone https://github.com/tobykurien/rpi_tablet_os.git rpi_tablet_os
 cd rpi_tablet_os/fs
 sudo cp -r * /
 
-#sudo mkdir /usr/share/touchegg
-#sudo ln -s ~/.config/touchegg/touchegg.conf /usr/share/touchegg/touchegg.conf
-sudo dpkg -i install ~/touchegg_*.deb
+# fix ownership of files in pi home directory
+sudo chown -R pi:pi /home/pi
+
+sudo dpkg -i install /home/pi/touchegg_*.deb
 
 dconf load /org/onboard/ < ~/onboard.dconf
 
