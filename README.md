@@ -10,7 +10,7 @@ View a video of a [7" Raspberry Pi tablet](https://tobykurien.com/images/rpi_tab
 
 To build the 7" Raspberry Pi tablet, you will need:
 
-- **Raspberry Pi**: minimum 3b, recommend 4b with 4Gb of RAM. I do not recommend sticking a heatsink on, as over time it will slide off the chip. Active cooling is not necessary if you don't overclock the Pi, and since the Pi will be in a vertical position during use, it [will run cool](https://www.raspberrypi.org/blog/thermal-testing-raspberry-pi-4/).
+- **Raspberry Pi**: minimum 3b (which gives the best performance/battery life trade-off), but a 4b also works well. Due to the low screen resolution, the 3b performs adequately and uses very little power especially on idle. Active cooling is not necessary if you don't overclock the Pi, and since the Pi will be in a vertical position during use, it [will run cool](https://www.raspberrypi.org/blog/thermal-testing-raspberry-pi-4/).
 - **USB Cable**: for powering the Pi. The cable selection is important - a cheap cable may not carry enough current, and you will see the "yellow lightning bolt" on the Pi indicating power throttling. I recommend a 3A capable braided cable, as the cable will take strain during normal use, since it is permanently connected to the tablet.
 - **microSD card**: for your OS and storage. I used a plain Sandisk 16Gb class 10 card.
 - **Official Raspberry Pi touchscreen**: if you have the original v1.0 like I do, then the screen brightness cannot be controlled by software, and you may want to consider modifying the LCD controller board with a potentiometer and MOSFET current limiter like I did (details to come).
@@ -88,6 +88,7 @@ If you would like to install the latest Firefox (rather than the old ESR version
 
 ## Other tweaks and tips
 
+- It is recommended that you switch from the default LXDE desktop to the more modern and up-to-date LXQt desktop, especially since GTK3 apps suffer from touch issues (taps don't work as mouse clicks). To do this, run `sudo tasksel` and select the LXQt desktop. Make sure to use Qt apps like QTerminal, rather than GTK apps, to avoid the touch issues. LXQt is also much more customizable.
 - [Enable Netflix](https://www.tomshardware.com/how-to/play-netflix-raspberry-pi) and other DRM-enabled streaming services
-- For fast power-off, run `sync` command in a terminal, and once it completes, you can disconnect power safely.
-- For screen-saving, you can install `xscreensaver` and then run `xscreensaver-demo` to configure it to turn off the screen rather than just showing a blank screen (to save power). However my experience has been that it sometimes activates during boot-up and on the 7" version the touch then stops working, leaving you stuck with no option but to reboot.
+- For fast power-off, close all apps and run `sync` command in a terminal, and once it completes, you can disconnect power safely.
+- For power saving, enabling the "screen blanking" setting in "Raspberry Pi Configuration" tool will blank the screen which usually also turns it off, saving power.
